@@ -4,7 +4,7 @@ Small, self-contained tools for SAP BW/4HANA.
 
 | Tool | What it does | Package | Documentation |
 | --- | --- | --- | --- |
-| <img src="docs/snapshot-extended/images/icon.svg" alt="" width="20"> Snapshot Extended | Detects deletions in the source for filtered full loads into standard aDSOs and passes them on as deltas | `ZBWT_SNX` | [docs/snapshot-extended](docs/snapshot-extended/README.md) |
+| <img src="docs/snapshot-extended/images/icon.svg" alt="" width="20"> Snapshot Extended | Enhanced Snapshot functionality: detects deletions in the source for filtered full loads into standard aDSOs and passes them on as deltas | `ZBWT_SNX` | [docs/snapshot-extended](docs/snapshot-extended/README.md) |
 
 ## Installation
 
