@@ -95,7 +95,8 @@ Maintain view `RSPROCESSTYPES` in SM30 and create a new entry:
 | Field | Value |
 | --- | --- |
 | Process type | `ZBWT_SNX` |
-| Description | for example "Snapshot Extended: write deletion records" |
+| Short text (20 characters, shown in the list of process types) | for example "SNX: D-Records" |
+| Description (60 characters) | for example "Snapshot Extended: Derive D-Records" |
 | Object name | `ZCL_BWT_SNX_PROCESS_TYPE` |
 | Object type | ABAP OO class |
 | Possible events | process ends successfully or incorrectly |
@@ -155,7 +156,7 @@ Instead of the process type, report `ZBWT_SNX_SNAPSHOT` can run as an ABAP progr
 
 The chain runs with the rolling filter of the load DTPs. Deletions within the scope are detected, everything outside stays untouched, including the records of other sources.
 
-The process type writes the result of every load request to the job log of the step, for example:
+The process type writes the result of every load request to the job log of the step. The process chain monitor shows these lines as the messages of the step, for example:
 
 ```
 Snapshot Extended: aDSO ZSNXCO02, transformations into the aDSO: 2, load requests: 2, limit 5.00 % per request
@@ -235,7 +236,7 @@ Messages are in English and appear in the report list or in the job log of the p
 - Two load requests from the same transformation are not processed together, even if their filters do not overlap.
 - Several sources must be separated by a constant in the transformation that writes directly into the aDSO. A separation only by a DTP filter on a source field is not detected by the guard.
 - The keys of the deletion candidates are read per request in one go, not in packages. Large volumes are untested.
-- The output goes to the job log only, not to the process log in the monitor.
+- There is no application log of its own. The output goes to the job log of the step, which the process chain monitor shows as the messages of the step.
 - Untested: key figures with summation, variables in the DTP filter, a data flow through an InfoSource.
 
 ## Renaming the objects
