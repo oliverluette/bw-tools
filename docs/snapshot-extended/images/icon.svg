@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Snapshot Extended</title>
+  <rect x="0" y="0" width="256" height="256" rx="56" fill="#10243A"/>
+  <g fill="none" stroke="#19C3B1" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 86 L48 62 Q48 48 62 48 L86 48"/>
+    <path d="M170 48 L194 48 Q208 48 208 62 L208 86"/>
+    <path d="M208 170 L208 194 Q208 208 194 208 L170 208"/>
+    <path d="M86 208 L62 208 Q48 208 48 194 L48 170"/>
+  </g>
+  <rect x="78" y="73" width="100" height="20" rx="10" fill="#F4F7F9"/>
+  <rect x="78" y="103" width="80" height="20" rx="10" fill="#F4F7F9"/>
+  <line x1="86" y1="143" x2="170" y2="143" stroke="#FF8A3D" stroke-width="16" stroke-linecap="round" stroke-dasharray="3 24"/>
+  <rect x="78" y="163" width="90" height="20" rx="10" fill="#F4F7F9"/>
+</svg>
