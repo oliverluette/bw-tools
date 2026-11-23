@@ -6,6 +6,14 @@ Small, self-contained tools for SAP BW/4HANA.
 | --- | --- | --- | --- |
 | <img src="docs/snapshot-extended/images/icon.svg" alt="" width="20"> Snapshot Extended | Enhanced Snapshot functionality: detects deletions in the source for filtered full loads into standard aDSOs and passes them on as deltas | `ZBWT_SNX` | [docs/snapshot-extended](docs/snapshot-extended/README.md) |
 
+## Related projects
+
+Separate repositories, not part of the abapGit installation below.
+
+| Project | What it does | Repository |
+| --- | --- | --- |
+| abap2sqlscript | Claude skill that migrates the ABAP logic of BW transformations (start, end, expert and field routines, lookups) to SQLScript (AMDP) for HANA execution, with approval steps, lookup analysis and a comparison of old and new results. Documentation in German. | [oliverluette/abap2sqlscript](https://github.com/oliverluette/abap2sqlscript) |
+
 ## Installation
 
 The ABAP objects are managed with [abapGit](https://abapgit.org).
