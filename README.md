@@ -12,6 +12,7 @@ Separate repositories, not part of the abapGit installation below.
 
 | Project | What it does | Repository |
 | --- | --- | --- |
+| coBWeb | MCP server for modeling in SAP BW/4HANA: lets a language model search, read, write and activate BW objects, read data, monitor loads and run DTPs and process chains via the REST interface of the BW Modeling Tools. | [oliverluette/coBWeb-mcp](https://github.com/oliverluette/coBWeb-mcp) |
 | abap2sqlscript | Claude skill that migrates the ABAP logic of BW transformations (start, end, expert and field routines, lookups) to SQLScript (AMDP) for HANA execution, with approval steps, lookup analysis and a comparison of old and new results. Documentation in German. | [oliverluette/abap2sqlscript](https://github.com/oliverluette/abap2sqlscript) |
 
 ## Installation
